@@ -21,14 +21,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-    <link href="css/pubmedqa.css" rel="stylesheet">
+    <link href="css/emrqa.css" rel="stylesheet">
 
   </head>
 
   <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="index.html">emrQA</a>
+    <a class="navbar-brand" href="index.html"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fa fa-bars"></i>
@@ -44,7 +44,7 @@
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="site-heading">
           <h1>emrQA</h1>
-          <span class="subheading">emrQA Dataset</span>
+          <span class="subheading">A Clinical Question Answering Dataset</span>
         </div>
       </div>
     </div>
@@ -59,30 +59,88 @@
       <div class="list-group">
         <div class="list-group-item"><h4>About</h4>
         <p></p>
-        <p>emrQA </p>
-        
+        <p>The task of emrQA is to answer questions posed against electronic medical records (EMRs) such as <i> How was the patient's extensive liver metastases diagnosed?</i></p>
+        <p>For more details about emrQA, please refer to this paper:</p>
+        <p class="text-center">
+          <a href="https://arxiv.org/abs/1809.00732"><button type="button" class="btn btn-info">emrQA Paper (EMNLP'18)</button></a>
+        </p>
         </div>
         <div class="list-group-item"><h4>Dataset</h4>
-        
+        <p>PubMedQA has has 1 million question-logical form and 400,000+ question answer evidence pairs. </p>
+        <p>Please visit our GitHub repository to create the dataset from i2b2 NER dataset:</p>
         <p class="text-center">
-          <a href="https://github.com/pubmedqa/pubmedqa"><button type="button" class="btn btn-success">PubMedQA Data & Code Repository</button></a>
+          <a href="https://github.com/panushri25/emrQA"><button type="button" class="btn btn-success">emrQA Data Repository</button></a>
         </p>
         </div>
         <div class="list-group-item"><h4>Submission</h4>
-        
+        <p>To submit your model, please follow the instructions in the GitHub repository.</p>
         </div>
         <div class="list-group-item"><h4>Citation</h4>
-        
-
+        <p>If you use emrQA in your research, please cite our paper by:</p>
+        <pre>
+@article{pampari2018emrqa,
+  title={emrQA: A large corpus for question answering on electronic medical records},
+  author={Pampari, Anusri and Raghavan, Preethi and Liang, Jennifer and Peng, Jian},
+  journal={arXiv preprint arXiv:1809.00732},
+  year={2018}
+}
+      </pre>
     </div>
   </div>
 </div>
-
+<div class="col-lg-7">
+  <div class="card card-outline-secondary">
+    <div class="card-header">
+      Leaderboard
+    </div>
+    <div class="card-body">
+      <table class="table table-responsive">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" rowspan=1></th>
+            <th scope="col" rowspan=1 class="align-middle text-center">Model</th>
+            <th scope="col" rowspan=1 class="align-middle text-center">Code</th>
+            <th scope="col" colspan=1 class='text-center'>Exact Match (%)</th>
+            <th scope="col" colspan=1 class='text-center'>F1-score (%)</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+            <td scope="row" class='align-middle text-center'>1<br>
+              <span class="badge badge-secondary">Apr 13, 2020</span></td>
+            <td class='align-middle text-center'>Baseline Model<br/>
+              <span class="affiliation">University of Massachusetts - Amherst</span><br/><a href="https://arxiv.org/abs/1909.06146" class="paperlink">(Paper et al. 2020)</a></td>
+            <td class='align-middle text-center'><a href="https://github.com/"><i class="far fa-file-alt"></i></a></td>
+            <td class='align-middle text-center'>00.00</td>
+            <td class='align-middle text-center'>00.19</td>
+          </tr><tr style="background:#f4f4f4">
+            <!-- <td scope="row" class='align-middle text-center'>2<br>
+              <span class="badge badge-secondary">Apr 13, 2020</span></td>
+            <td class='align-middle text-center'>Baseline BERT Model<br/>
+              <span class="affiliation">University of -</span><br/><a href="https://arxiv.org/abs/1909.06146" class="paperlink">(-. 2019)</a></td>
+            <td class='align-middle text-center'><a href="https://github.com/pubmedqa/pubmedqa"><i class="far fa-file-alt"></i></a></td>
+            <td class='align-middle text-center'>68.08</td>
+            <td class='align-middle text-center'>52.72</td> -->
+          </tr></tbody>
+      </table>
+    </div>
+  </div>
+  
+  
 </div>
 </div>
 
     <hr>
     <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">Leaderboard template adopted from <a href="https://github.com/pubmedqa/pubmedqa.github.io">PubMedQA leaderboard.</a></p>
+            <p class="copyright text-muted">Theme adapted from Start Bootstrap's <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> template.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
