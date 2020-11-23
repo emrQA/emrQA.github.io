@@ -60,8 +60,12 @@
         <div class="list-group-item"><h4>About</h4>
         <p></p>
         <p>
-          emrQA is a clinical question answering dataset that contains questions posed by physicians against clinical notes in electronic medical records. 
-          For e.g., How was the patient's extensive liver metastases diagnosed?
+          emrQA is a clinical question answering dataset that contains questions (along with question paraphrases, logical forms and answers) posed by physicians against clinical notes in electronic medical records. 
+          For e.g., 
+          <b>Question:</b> How was the patient's extensive liver metastases diagnosed? 
+          <b>Paraphrase:</b> What diagnosis was used for the patient's extensive liver metastases?
+          <b>Logical Form:</b> {LabEvent (x) [date=x, result=x] OR ProcedureEvent (x) [date=x, result=x] OR VitalEvent (x) [date=x, result=x]} reveals ConditionEvent (|problem|)
+          <b>Answer:</b> An abdominal and pelvic ct scan with iv contrast
           
           </i></p>
         <p>For more details about emrQA, please refer to the paper:</p>
